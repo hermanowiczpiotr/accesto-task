@@ -27,7 +27,7 @@ services:
           -
     App\Application\Notification\DummyEmailNotifier:
         tags: ['app.notifier']
-        
+
     App\Application\Notification\Notifier: '@App\Application\Notification\NotifierChain'
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
