@@ -1,3 +1,6 @@
+Task 4 - my notes:
+I would move repositories implemantations to "infrastructure" layer, add "final class" to handlers and make some long lines shorter according with psr-12
+
 # Accesto PHP/Symfony recruitment task
 
 You are working on a small task management system. It allows to manage a simple todo list. 
