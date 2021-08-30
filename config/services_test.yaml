@@ -1,0 +1,13 @@
+services:
+    App\Application\User\Repository\UserRepository:
+      class: App\Application\User\Repository\InMemoryUserRepository
+      public: true
+    App\Application\Task\Repository\TaskRepository:
+      class: App\Application\Task\Repository\InMemoryTaskRepository
+      public: true
+    App\Application\Notification\DummyEmailNotifier:
+      public: true
+    App\Application\Notification\NotifierChain:
+      public: true
+      arguments:
+        - !tagged_iterator app.notifier
