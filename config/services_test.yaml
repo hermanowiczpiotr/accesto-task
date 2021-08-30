@@ -7,6 +7,7 @@ services:
       public: true
     App\Application\Notification\DummyEmailNotifier:
       public: true
+      tags: ['app.notifier']
     App\Application\Notification\NotifierChain:
       public: true
       arguments:
